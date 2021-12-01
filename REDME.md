@@ -14,7 +14,7 @@
 ## MySQL 데이터베이스 생성 및 사용자 생성
 
 ```sql
-create user 'bloguser'@'%' identified by 'bitc5600';
+create user 'bloguser'@'%' identified by 'asd1234';
 GRANT ALL PRIVILEGES ON *.* TO 'bloguser'@'%';
 create database blog;
 ```
@@ -25,6 +25,9 @@ create database blog;
 - use blog; 데이터 베이스 선택
 
 ```sql
+
+use blog;
+
 CREATE TABLE user(
     id int primary key auto_increment,
     username varchar(100) not null unique,
